@@ -1,2 +1,0 @@
-# ReactUCSC
-UCSC classroom exercise
