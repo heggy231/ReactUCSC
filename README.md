@@ -1,2 +1,2 @@
 # ReactUCSC
-UCSC classroom excersice
+UCSC classroom exercise
