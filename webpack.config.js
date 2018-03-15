@@ -1,5 +1,6 @@
+const webpack = require('webpack');
 const config = {
-    entry: './src/index.tsx', // entry point single you can create an array ['src1', 'src2']
+    entry: './kanban/src/index.tsx', // entry point single you can create an array ['src1', 'src2']
     output: {
         filename: './dist/bundle.js' // compile everything from entry point and output bundle.js
     },
@@ -18,7 +19,14 @@ const config = {
                 exclude: [/node_modules/]
             }
         ]
-    }
+    },
+
+    devServer: {
+        hot: true
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };
 
 module.exports = config;
